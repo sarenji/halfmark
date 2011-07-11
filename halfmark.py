@@ -42,6 +42,8 @@ class Halfmark(object):
     
     def render(self, text):
         text = text.strip()
+        if not text:
+            return text
         # TODO don't markup anything between ``?
         text = self.html_encode(text)
         text = self.strong(text)

@@ -10,6 +10,7 @@ def neg(input, result):
     assert _hm.render(input) != result
 
 def testWhitespace():
+    pos("", "")
     pos("hello world.", "<p>hello world.</p>")
     pos("hello world.\n\nhi", "<p>hello world.</p><p>hi</p>")
     pos("hello world.\n\n\nhi", "<p>hello world.</p><p>hi</p>")
